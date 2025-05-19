@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buscador por Região</title>
+     <link rel="icon" href="img/localizacao.png" type="image/x-icon">
+    <style>
+      .container-text {
+        display: flex;
+        text-align: center;
+        margin-bottom: 20px;
+      }
+      .container-text h1 {
+      margin: 0 auto;
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      background-color: #cfc3f0; 
+      padding:20px;
+      text-align: center; 
+      z-index: 1000; 
+      }
+
+      .container-footer {
+        position: fixed; 
+        bottom: 0; 
+        left: 0; 
+        width: 100%; 
+        background-color: #cfc3f0;
+        padding:10px 0; 
+        text-align: center; 
+        z-index: 1000; 
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #706680;
+        color: #333;
+        padding: 20px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        margin: 0 auto;
+      }
+      label {
+       gap: 20px;
+       font-size: 18px;
+       padding: 10px 0 0;
+       color: white;
+ 
+      }
+    </style>
+  </head>
+  <body>
+       <div class="container-text">
+        <h1>Buscador por Região</h1> 
+      </div>
+
+    <form>
+      <label for="regioes">Regiões:</label>
+      <select id="regioes" onchange="buscarEstados()"></select>
+      <label for="estados">Estados:</label>
+      <select id="estados" onchange="buscarCidades()"></select>
+      <label for="cidades">Cidades:</label>
+      <select id="cidades"></select>
+    </form>
+    </div>
+
+    <div class="container-footer">
+      <footer>
+        <p>© 2025 Jéssica O. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
